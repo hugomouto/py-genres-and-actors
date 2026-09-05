@@ -27,7 +27,7 @@ jobs:
       - name: Run migrations
         run: |
           python manage.py migrate
-          python manage.py migrate --run-syncdb
+          python manage.py migrate --database=default
         
 
       - name: Run flake8
